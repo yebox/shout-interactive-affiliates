@@ -96,7 +96,7 @@ div.MuiFormControl-root.MuiTextField-root {
 /* Styled Scroll Bar */
 .styled-scroll-bar::-webkit-scrollbar {
   width: 4px;
-  height: 5px;
+  height: 4px;
   -webkit-appearance: none;
   scroll-padding: 20px;
 }

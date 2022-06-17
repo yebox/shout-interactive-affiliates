@@ -69,7 +69,7 @@ const Dashboard = () => {
           </p>
         </div>
         <p className="subheader_heavy mb-[1.2rem]">Analytics</p>
-        <div className="flex gap-[24px] overflow-x-scroll styled-scroll-bar mb-[1.6rem] md:mb-[4.4rem] border-dashed border-b md:border-none pb-7 md:pb-0">
+        <div className="flex gap-[24px] overflow-x-scroll styled-scroll-bar mb-[1.6rem] md:mb-[4.4rem] border-dashed border-b md:border-none pb-7 md:pb-2">
           {stats.map((stat, i) => {
             return <StatCard key={i} type={stat.type} text={stat.title} value={stat.value}></StatCard>;
           })}
