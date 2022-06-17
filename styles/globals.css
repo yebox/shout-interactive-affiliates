@@ -41,7 +41,15 @@ body {
   font-family: 'SF Pro Display', sans-serif !important;
 
   /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow: hidden;
 
+
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
 }
 
 a {
@@ -58,14 +66,14 @@ a {
 }
 
 .scroll_hide::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scroll_hide {
-  -ms-overflow-style: none;
+  -ms-overflow-style: none !important;
   /* IE and Edge */
-  scrollbar-width: none;
+  scrollbar-width: none !important;
   /* Firefox */
 }
 
@@ -83,4 +91,27 @@ div.MuiCalendarPicker-root button.MuiButtonBase-root.Mui-selected {
 
 div.MuiFormControl-root.MuiTextField-root {
   width: 100%;
+}
+
+/* Styled Scroll Bar */
+.styled-scroll-bar::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+  -webkit-appearance: none;
+  scroll-padding: 20px;
+}
+
+.styled-scroll-bar::-webkit-scrollbar-track {
+  background: #0a1f4431;
+
+}
+
+.styled-scroll-bar::-webkit-scrollbar-thumb {
+  background: #010c1d56;
+  border-radius: 8px;
+
+}
+
+.styled-scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

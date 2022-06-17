@@ -1,7 +1,7 @@
 import React from "react";
 
-const Padding = (props) => {
-  return <div className="w-full h-full relative p-[28px] md:px-[48px] md:py-[42px]">{props.children}</div>;
+const Padding = ({ children, className }) => {
+  return <div className={`w-full relative p-[28px] md:px-[48px] md:py-[42px] ${className}`}>{children}</div>;
 };
 
 export default Padding;

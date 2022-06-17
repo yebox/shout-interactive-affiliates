@@ -1,14 +1,3 @@
-.container {
-    /* max-width: 144rem; */
-    width: 100%;
-    margin: 0 auto;
-    /* background-color: var(--color-gray-light-1); */
-    display: flex;
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.10);
-    min-height: 100vh;
-
-}
-
 @media (min-width: 940px) {
     .sidebar {
         width: 25rem !important;
@@ -45,6 +34,18 @@
         /* color: var(--color-primary) !important; */
     }
 }
+
+.container {
+    /* max-width: 144rem; */
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: var(--color-gray-light-1); */
+    display: flex;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.10);
+    min-height: 100vh;
+
+}
+
 
 .sidebar {
     width: 100%;

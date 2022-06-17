@@ -22,6 +22,7 @@ const MySelect = ({ handleChange, label }) => {
     height: "48px",
     borderRadius: "16px",
     fontSize: "14px",
+    // marginBottom: "10px",
     fontFamily: "'SF Pro Display', sans-serif !important",
     "& fieldset": {
       border: "1px solid #DFE4E8",

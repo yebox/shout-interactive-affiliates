@@ -1,6 +1,6 @@
 const StatCard = ({ value, text, color, type }) => {
   return (
-    <div className="flex h-[115px] md:h-[120px] min-w-[220px] md:min-w-[256px] rounded-[8px] border border-my-border-color--1 items-center px-[24px] py-[25px] relative cursor-pointer">
+    <div className="flex h-[115px] md:h-[120px] min-w-[220px] md:min-w-[256px] rounded-[8px] border border-my-border-color--1 items-center px-[24px] py-[25px] relative cursor-pointer bg-white">
       <div className="info flex flex-col mb-2">
         <span className="caption_light flex items-center">
           {text} <span className="icon-angle-left ml-[10px]"></span>

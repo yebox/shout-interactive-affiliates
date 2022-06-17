@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ManagerSwitcher = () => {
+const ManagerSwitcher = ({ className }) => {
   const managerTypes = ["Affiliates", "Brand Managers", "Party Managers", "Analytics Manager", "Celebrities", "Media Managers"];
   const [activeManager, setActiveManager] = useState("Affiliates");
 
@@ -9,7 +9,7 @@ const ManagerSwitcher = () => {
   };
 
   return (
-    <nav className="Switcher flex mb-[48px] overflow-x-scroll scroll_hide">
+    <nav className={`Switcher flex mb-[48px] overflow-x-scroll scroll_hide ${className}`}>
       {managerTypes.map((type, i) => {
         return (
           <p
@@ -17,9 +17,9 @@ const ManagerSwitcher = () => {
               handleSwitch(type);
             }}
             key={i}
-            className={` whitespace-nowrap  px px-[16px] py-[6px] transition-all  rounded-[8px] body_heavy  ${
+            className={` whitespace-nowrap px-[16px] py-[6px] transition-all  rounded-[8px] body_heavy  ${
               activeManager == type ? "text-black-default bg-primary-lightest-2" : "text-black-light"
-            } cursor-pointer`}
+            } cursor-pointer `}
           >
             {type}
           </p>
